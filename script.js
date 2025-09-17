@@ -80,7 +80,7 @@ function showSection(sectionId) {
     document.querySelectorAll(".section").forEach(sec => sec.classList.add("d-none"));
     document.getElementById(sectionId).classList.remove("d-none");
 }
-
+document.getElementById("brand").addEventListener('click', ()=> showSection("taskadd"));
 document.getElementById("linktoadd").addEventListener("click", () => showSection("taskadd"));
 document.getElementById("linktoall").addEventListener("click", () => showSection("all"));
 document.getElementById("linktodo").addEventListener("click", () => showSection("todo"));
