@@ -52,7 +52,7 @@ function updateAll() {
     tasks.sort((a,b) => (a[2],b[2]));
     tasks.forEach(task => {
         const taskItem = document.createElement("div");
-        taskItem.className = "list-group-item d-flex justify-content-between align-items-center";
+        taskItem.className = "text-bg-dark list-group-item d-flex justify-content-between align-items-center";
         taskItem.innerHTML = `
             <span class="${task.completed ? 'text-decoration-line-through' : ''}">${task.text}</span>
             <div>
